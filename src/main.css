@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .underLineNavBar:hover {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+    }
+    .introduceBtnGreen {
+        position: absolute;
+        display: block;
+        top: 13px;
+        left: 10px;
+        width: 100%;
+        height: 13px;
+        background-color: theme(colors.lightGreen);
+        z-index: 0;
+        opacity: 0.3;
+    }
+    .introduceBtnGreen:hover {
+        background-color: theme(colors.lightLightGreen);
+    }
+    .introduceBtnOrange {
+        position: absolute;
+        display: block;
+        top: 13px;
+        left: 10px;
+        width: 100%;
+        height: 13px;
+        background-color: theme(colors.orange);
+        z-index: 0;
+        opacity: 0.3;
+    }
+    .introduceBtnOrange:hover {
+        background-color: theme(colors.lightOrange);
+    }
+    .underLineSales {
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 140px;
+        background-color: theme(colors.spring);
+        top: 64px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .quoteImageOrange {
+        content: url('/src/images/quote-iconOrange.svg');
+        position: absolute;
+        top: -35px;
+        left: -51px;
+    }
+    .quoteImageGreen {
+        content: url('/src/images/quote-iconGreen.svg');
+        position: absolute;
+        top: -35px;
+        left: -51px;
+    }
+    .italicBlueText {
+        @apply font-PlayFair italic text-lightBlue dark:text-blue
+    }
+    .mostSubTitle {
+        @apply dark:text-slate-50 text-darkBlue opacity-80
+    }
+    .playIcon {
+        content: url('/src/images/iconPlay.png');
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    } 
+}
+
+@layer base {
+    h1 {
+        font-size: 68px;
+        line-height: 72px;
+        font-family: 'Playfair Display';
+    }
+    h2 {
+        font-size: 44px;
+        line-height: 52px;
+        font-family: 'Playfair Display';
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 48px;
+        font-family: 'Playfair Display';
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 48px;
+    }
+}
